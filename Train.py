@@ -101,3 +101,7 @@ pickle.dump(
     Scaler,
     open("Model/Scaler.pkl", "wb")
 )
+
+print('\n')
+print("MSE(liner_regression): ",mean_absolute_error(Y_test,y_pred_LR))
+print("MAE(liner_regression): ",mean_squared_error(Y_test,y_pred_LR))
